@@ -10,4 +10,5 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 # Setup of prompt, color reference -> http://misc.flogisoft.com/bash/tip_colors_and_formatting
 export PS1='\[\033[1;94m\][\u:\W$(__git_ps1 " (%s)")]\$ \[\033[0;37m\]'
 
-
+# For Activation of pyenv
+eval "$(pyenv init -)"
