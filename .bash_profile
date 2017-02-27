@@ -6,7 +6,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # Setup git completion and prompt support installe
 export GIT_PS1_SHOWDIRTYSTATE=true
 . /usr/local/etc/bash_completion.d/git-completion.bash
-. /usr/local/etc/bash_completion.d/.git-prompt.sh
+. /usr/local/etc/bash_completion.d/git-prompt.sh
 
 # Setup of prompt, color reference
 # http://misc.flogisoft.com/bash/tip_colors_and_formatting
