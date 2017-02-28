@@ -8,10 +8,10 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 . /usr/local/etc/bash_completion.d/git-completion.bash
 . /usr/local/etc/bash_completion.d/git-prompt.sh
 
-# Setup of prompt, color reference
+# Setup of prompt, color reference. Added condition to disable git branch display when root (sudo su)
 # http://misc.flogisoft.com/bash/tip_colors_and_formatting
-
 export PS1='\[\033[1;94m\][\u:\W$(if [ $(id -u) -ne 0 ]; then echo  $(__git_ps1 " (%s)") ; fi)]\$ \[\033[0;37m\]'
+
 # Initialize pyenv and rbenv
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
