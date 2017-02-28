@@ -10,8 +10,8 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 
 # Setup of prompt, color reference
 # http://misc.flogisoft.com/bash/tip_colors_and_formatting
-export PS1='\[\033[1;94m\][\u:\W$(__git_ps1 " (%s)")]\$ \[\033[0;37m\]'
 
+export PS1='\[\033[1;94m\][\u:\W$(if [ $(id -u) -ne 0 ]; then echo  $(__git_ps1 " (%s)") ; fi)]\$ \[\033[0;37m\]'
 # Initialize pyenv and rbenv
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
